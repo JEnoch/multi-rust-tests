@@ -9,6 +9,7 @@ crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
 libc = "0.2"
+rand = "0.8"
 
 [profile.release]
 opt-level = 3
