@@ -1,0 +1,9 @@
+services:
+  builder:
+    build: .
+    image: multi-rust-tests:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

@@ -1,0 +1,16 @@
+[package]
+name = "project_b"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "project_b"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = false
+strip = false
