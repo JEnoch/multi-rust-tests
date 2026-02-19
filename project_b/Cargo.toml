@@ -8,8 +8,9 @@ name = "project_b"
 crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
-rand = "0.8"
 libc = "0.2"
+rand = "0.9"
+rustc_version_runtime = "0.3.*"
 
 [profile.release]
 opt-level = 3
